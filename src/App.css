@@ -1,20 +1,19 @@
-:root{
-  --SideNav:#000;
-  --SideNavTextColor:white
+:root {
+  --SideNav: #000;
+  --SideNavTextColor: white;
 }
 
-
-.taps{
+.taps {
   width: 80%;
 }
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
 }
-.app{
+.app {
   width: 100%;
   height: 100vh;
   padding: 100;
@@ -22,8 +21,8 @@
 }
 
 /* ----------Side Nav---------- */
-.sideNavContainer{
-  width: 20%;
+.sideNavContainer {
+  width: 25%;
   height: 100vh;
   position: relative;
   background: var(--SideNav);
@@ -33,89 +32,149 @@
   align-items: center;
   padding: 20px;
 }
-.buttons{
+.buttons {
   display: flex;
   flex-direction: column;
 }
-.logOut{
+.logOut {
   position: absolute;
   bottom: 20px;
   padding: 20px 40px;
   border: 1px solid transparent;
- border-radius: 20px;
- transition: 500ms ease-in-out;
- cursor: pointer;
+  border-radius: 20px;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
 }
-.btn{
+.btn {
   padding: 10px 70px;
   border-radius: 10px;
   margin-top: 10px;
   cursor: pointer;
 }
-.logoutbtn{
+.logoutbtn {
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
-.logOut:hover{
-  border: 1px solid #0BB5FF;
+.logOut:hover {
+  border: 1px solid #0bb5ff;
 }
-.currentlocation{
-  border: 2px solid #0BB5FF;
-  background-color: #8360C3;
+.currentlocation {
+  border: 2px solid #0bb5ff;
+  background-color: #8360c3;
   color: white;
   font-weight: bold;
 }
-.otherLocation{
+.otherLocation {
   border: 2px solid transparent;
   background-color: #fff;
-  color: #0BB5FF;
+  color: #0bb5ff;
   font-weight: bold;
   transition: 500ms ease-in-out;
-
 }
-.otherLocation:hover{
-  border: 2px solid #8360C3;
-  background-color: #0BB5FF;
+.otherLocation:hover {
+  border: 2px solid #8360c3;
+  background-color: #0bb5ff;
   color: #fff;
 }
-.icon{
+.icon {
   margin-right: 20px;
 }
 /* ----------Side Nav ends---------- */
 
-
 /* ----------OverView---------- */
-.overviewContainer{
+.overviewContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
-
-
+.cols {
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hotelAdmins {
+  background-color: #8a2387;
+  padding: 20px 60px;
+  border-radius: 20px;
+  color: white;
+}
+.hotelMonthlyUsers {
+  background-color: rgba(236, 56, 188, 0.5);
+  padding: 20px 60px;
+  border-radius: 20px;
+  color: white;
+}
+.appUser {
+  background-color: #fc5c7d;
+  padding: 20px 60px;
+  border-radius: 20px;
+  color: white;
+}
+.monthlyAppUsers {
+  background-color: rgba(115, 3, 192, 0.5);
+  padding: 20px 60px;
+  border-radius: 20px;
+  color: white;
+}
 /* ----------OverView ends---------- */
 
-
 /* ----------Login ---------- */
-.loginContainer{
+.loginContainer {
   width: 100%;
   height: 100%;
 }
-.imgContainder{
+.imgContainder {
   width: 100%;
   height: 100%;
   background: coral;
 }
-img{
+img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
-.toplayer{
+.toplayer {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, .3);
   z-index: 3;
 }
+.loginform {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  top: 25%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.logoholder {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 30%;
+}
+.form{
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 /* ----------Login end ---------- */
-

@@ -3,7 +3,7 @@ import { SideNav, OverView, AddAdmin, LoginPage } from "./Components/index";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
-  const login = "yes";
+  const login = "no";
   return (
     <BrowserRouter>
       <div className="app">
