@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee ,faChartLine} from '@fortawesome/free-solid-svg-icons'
 
 const LoginPage = () => {
   return (
@@ -11,7 +13,10 @@ const LoginPage = () => {
           />
         </div>
         <div className="toplayer" />
-      <div className="loginform"></div>
+      <div className="loginform">
+      <FontAwesomeIcon icon={faCoffee} />
+      </div>
+
     </div>
   );
 };
