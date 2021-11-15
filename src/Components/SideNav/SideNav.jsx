@@ -18,7 +18,7 @@ const SideNav = () => {
       <div className="buttons">
         <Link
           className={`btn ${
-            location.pathname == "/" ? "currentlocation" : "otherLocation"
+            location.pathname === "/" ? "currentlocation" : "otherLocation"
           }`}
           to="/"
         >
@@ -27,7 +27,7 @@ const SideNav = () => {
         </Link>
         <Link
           className={`btn ${
-            location.pathname == "/addadmin"
+            location.pathname ==="/addadmin"
               ? "currentlocation"
               : "otherLocation"
           }`}

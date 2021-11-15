@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { faEye, faEyeSlash, faAt, faLock } from "@fortawesome/free-solid-svg-icons";
 import image from "../../img/logo.png";
 
+
 const LoginPage = () => {
+  const [type, setType] = useState('password');
+
+
+  const EyeChanger=()=>(
+    type==='password'?<FontAwesomeIcon icon={faEye} />:<FontAwesomeIcon icon={faEyeSlash} />
+  )
+
+const passwordVisibility=()=>{
+  if(type==='password'){
+    setType('text')
+  }else{
+    setType('password')
+  }
+}
+
   return (
     <div className="loginContainer">
       <div className="imgContainder">
@@ -19,7 +35,28 @@ const LoginPage = () => {
           <img src={image} alt="logo" className="logo" />
         </div>
         <div className="form">
-            
+          <div className="inputHolder">
+            Email
+            <div className="textInputContainer">
+              <div className="inputIcons">
+                <FontAwesomeIcon icon={faAt} />
+                <input placeholder="Email" className="inputs" type='email'/>
+              </div>
+            </div>
+          </div>
+          <div className="inputHolder">
+            Password
+            <div className="textInputContainer">
+              <div className="inputIcons">
+                <FontAwesomeIcon icon={faLock} />
+                <input placeholder="Password" className="inputs" type={type} />
+                <button type="button" onClick={()=>passwordVisibility()} className="passwordbtn">
+                  <EyeChanger/>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button className='signinbtn'>Sign in</button>
         </div>
       </div>
     </div>

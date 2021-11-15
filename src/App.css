@@ -2,7 +2,9 @@
   --SideNav: #000;
   --SideNavTextColor: white;
 }
-
+*:focus {
+  outline: none;
+}
 .taps {
   width: 80%;
 }
@@ -170,11 +172,67 @@ img {
 }
 .form{
   width: 500px;
-  height: 400px;
+  height: 300px;
   background-color: white;
   border-radius: 20px;
   margin-top: 10px;
   box-shadow: 3px 3px 3px black;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.textInputContainer{
+  width: 280px;
+  height: 50px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.inputIcons{
+  display: flex;
+  align-items: center;
+}
+.inputs{
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0 solid;
+  padding: 10px  20px;
+}
+.passwordbtn{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.signinbtn{
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: #0BB5FF;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 10px;
+  transition: 500ms ease-in;
+  
+}
+.signinbtn:hover{
+  color: #0BB5FF;
+  background-color: white;
+  border: 1px solid #0bb5ff;
+
 }
 /* ----------Login end ---------- */
+
+
+
+
+/* ----------add admin---------- */
+.addAdminContainer{
+  width: 100%;
+  height: 100%;
+}
+/* ----------add admin end---------- */
