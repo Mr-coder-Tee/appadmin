@@ -1,9 +1,15 @@
+import React, { useState } from "react";
 import "./App.css";
 import { SideNav, OverView, AddAdmin, LoginPage } from "./Components/index";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
-  const login = "no";
+  const [login,setLogin]=useState('yes')
+
+  const loginfunction=()=>{
+    setLogin('yes')
+  }
+
   return (
     <BrowserRouter>
       <div className="app">
@@ -18,7 +24,7 @@ function App() {
         ) : (
           <>
             <Routes>
-              <Route path="/" element={<LoginPage />} />
+              <Route path="/" element={<LoginPage login={loginfunction}/>} />
             </Routes>
           </>
         )}

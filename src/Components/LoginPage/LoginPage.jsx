@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash, faAt, faLock } from "@fortawesome/free-solid-svg-icons";
 import image from "../../img/logo.png";
+// import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 
-const LoginPage = () => {
+
+const LoginPage = ({login}) => {
   const [type, setType] = useState('password');
 
 
@@ -56,7 +59,7 @@ const passwordVisibility=()=>{
               </div>
             </div>
           </div>
-          <button className='signinbtn'>Sign in</button>
+          <button className='signinbtn' onClick={()=>login()}>Sign in</button>
         </div>
       </div>
     </div>

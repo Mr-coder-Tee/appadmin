@@ -21,6 +21,9 @@
   padding: 100;
   display: flex;
 }
+.marginLeft{
+  margin-left: 10px;
+}
 
 /* ----------Side Nav---------- */
 .sideNavContainer {
@@ -234,5 +237,74 @@ img {
 .addAdminContainer{
   width: 100%;
   height: 100%;
+  position: relative;
 }
+.searchBar{
+  /* position: absolute;
+  top: 0; */
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.searchInputContainer{
+  border: 1px solid rgba(0, 0, 0, .3);
+  padding: 0px 50px;
+  border-radius: 20px;
+  width: 30%;
+}
+.addForm{
+  display: flex;
+  flex-wrap: wrap;
+}
+.addForm{
+  display: flex;
+  /* position: absolute; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* top: 100px; */
+  margin: 20px 0;
+  }
+  .addBtn{
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #0276FD;
+    border-radius: 10px;
+    color: white;
+  }
+  .hotelList{
+    padding: 20px;
+  }
 /* ----------add admin end---------- */
+
+
+
+/* ----------Hotel card ---------- */
+.hotelTap{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.hotelName{
+  width: 80%;
+  display: flex;
+  align-items: center ;
+}
+.deleteBtn{
+  width: 80px;
+  height: 20px  ;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  padding: 10px 10px;
+}
+/* ----------Hotel card end ---------- */
