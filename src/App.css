@@ -24,6 +24,9 @@
 .marginLeft{
   margin-left: 10px;
 }
+.ma-5-right{
+  margin-right: 10px;
+}
 
 /* ----------Side Nav---------- */
 .sideNavContainer {
@@ -282,6 +285,29 @@ img {
   .hotelList{
     padding: 20px;
   }
+  .hotelNavigation{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navBtn{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .next{
+    background-color: #0bb5ff;
+  }
+  .nextDis{
+    background-color: gray;
+  }
+  .prev{
+    background-color: #0bb5ff;
+  }
+  .prevDis{
+    background-color: gray;
+  }
 /* ----------add admin end---------- */
 
 
@@ -289,22 +315,63 @@ img {
 /* ----------Hotel card ---------- */
 .hotelTap{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 20px 10px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 .hotelName{
   width: 80%;
   display: flex;
   align-items: center ;
-}
-.deleteBtn{
-  width: 80px;
-  height: 20px  ;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
   margin-right: 10px;
-  padding: 10px 10px;
+}
+.btnHotel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.profileIconContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.profieIcon{
+  color: white;
+}
+.deleteIcon{
+  color: red;
+  transition: 500ms ease-in;
+}
+.reload{
+  color: #0BB5FF;
+  transition: 500ms ease-in;
+}
+.btnHotel:hover .deleteIcon{
+  transform: scale(1.3);
+}
+.btnHotel:hover .reload{
+  transform: scale(1.3);
+}
+.btnSetter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ----------Hotel card end ---------- */
